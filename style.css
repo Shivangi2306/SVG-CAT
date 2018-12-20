@@ -1,0 +1,108 @@
+.blue-eyes .eye-color{
+	fill: #00f;
+}
+
+.sad .mouth{
+	transform: rotate(180deg) scale(.6);
+	transform-origin: 380px 400px; 
+	
+}
+
+@keyframes moveEyes{
+
+	0%{
+		transform: translate(2px,2px);
+	}
+	1%{
+		transform: translate(0px,-1px);
+	}
+
+	5%{
+		transform: translate(-4px,-8px);
+	}
+
+	9%{
+		transform: translate(-9px,-10px);
+	}
+	12%{
+		transform: translate(-10px,-11px);
+	}
+	16%{
+		transform: translate(-13px,-15px);
+	}
+	20%{
+		transform: translate(-18px,-20px);
+
+	}
+
+	40%{
+		transform: translate(0px,0px);
+	}
+
+	50%{
+		transform: translate(10px,2px);
+	}
+
+	65%{
+		transform: translate(18px,5px);
+	}
+	85%{
+		transform: translate(18px,0px);
+	}
+	95%{
+		transform: translate(18px,-10px);
+	}
+	100%{
+		transform: translate(7px,7px);
+	}
+}
+.move-around .inner-eye-group{
+	animation: moveEyes 30s infinite;
+	transition: all;
+
+}
+
+@keyframes leftWhiskers{
+	20%{
+		transform: rotate(5deg);
+	}
+
+	60%{
+		transform: rotate(-5deg);
+	}
+
+}
+
+
+.move-around .left-whiskers{
+	animation: leftWhiskers 5s infinite;
+	transform-origin: 325px 340px;
+}
+
+@keyframes rightWhiskers{
+	5%{
+		transform: rotate(-2deg);
+	}
+
+	10%{
+		transform: rotate(-6deg);
+	}
+
+}
+
+.move-around .right-whiskers{
+	animation: rightWhiskers 10s infinite;
+	transform-origin: 325px 340px;
+}
+
+@keyframes move{
+	40%{
+		transform: rotateZ(30deg);
+		transform: rotateX(45deg);
+		transform: rotateY(12deg);
+			}
+}
+
+.move-around{
+	animation: move 5s infinite;
+}
